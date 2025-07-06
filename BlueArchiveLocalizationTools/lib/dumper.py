@@ -7,7 +7,7 @@ from lib.console import notice
 from lib.downloader import FileDownloader
 from utils.util import CommandUtils, FileUtils, ZipUtils
 
-IL2CPP_ZIP = "https://github.com/Perfare/Il2CppDumper/archive/refs/heads/master.zip"
+IL2CPP_ZIP = "https://github.com/akio7624/Il2CppDumper/archive/refs/heads/master.zip"
 IL2CPP_FOLDER = "Il2CppDumper-master"
 ZIP_NAME = "il2cpp-dumper.zip"
 
