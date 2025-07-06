@@ -7,9 +7,9 @@ from lib.console import notice
 from lib.downloader import FileDownloader
 from utils.util import CommandUtils, FileUtils, ZipUtils
 
-IL2CPP_ZIP = "https://github.com/akio7624/Il2CppDumper/archive/refs/heads/master.zip"
+IL2CPP_ZIP = "https://github.com/akio7624/Il2CppDumper/releases/download/v25.06.25/Il2CppDumper-net8-akiobuild-v25.06.25.zip"
 IL2CPP_FOLDER = "Il2CppDumper-master"
-ZIP_NAME = "il2cpp-dumper.zip"
+ZIP_NAME = "Il2CppDumper-net8-akiobuild-v25.06.25.zip"
 
 
 class IL2CppDumper:
@@ -64,12 +64,8 @@ class IL2CppDumper:
         notice("Dumper dir here: "+self.project_dir)
 
         success, err = CommandUtils.run_command(
-            "dotnet",
-            "run",
-            "--framework",
-            "net8.0",
-            "--project",
-            "/home/runner/work/BaPs/BaPs/"+self.project_dir+"/Il2CppDumper.csproj",
+           "start",
+            "/home/runner/work/BaPs/BaPs/"+self.project_dir+"/Il2CppDumper.exe",
             il2cpp_path,
             global_metadata_path,
             extract_path,
