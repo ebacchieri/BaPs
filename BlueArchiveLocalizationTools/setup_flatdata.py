@@ -23,8 +23,8 @@ if not path.exists(path.join(EXTRACT_DIR, "FlatData")):
     )
 
     if(il2cpp_path and metadata_path):
-        notice("il2cpp_path: " + il2cpp_path)
-        notice("metadata_path: " + metadata_path)
+        notice("il2cpp_path: " + il2cpp_path[0])
+        notice("metadata_path: " + metadata_path[0])
 
     if not (il2cpp_path and metadata_path):
         raise FileNotFoundError(
