@@ -75,6 +75,7 @@ class IL2CppDumper:
             extract_path,
             cwd=self.project_dir,
         )
+        notice("Dumper work:  "+err)
         if not success:
             notice("Failed to extract, trying again... ")
             notice("Error: "+err)
