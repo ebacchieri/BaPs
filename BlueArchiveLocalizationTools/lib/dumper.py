@@ -69,7 +69,7 @@ class IL2CppDumper:
             "--framework",
             "net8.0",
             "--project",
-            self.project_dir+"/Il2CppDumper.csproj",
+            "/home/runner/work/BaPs/BaPs/"+self.project_dir+"/Il2CppDumper.csproj",
             il2cpp_path,
             global_metadata_path,
             extract_path,
