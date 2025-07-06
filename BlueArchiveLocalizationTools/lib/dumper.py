@@ -68,6 +68,8 @@ class IL2CppDumper:
             "run",
             "--framework",
             "net8.0",
+            "--project",
+            self.project_dir+"/Il2CppDumper.csproj",
             il2cpp_path,
             global_metadata_path,
             extract_path,
