@@ -1,3 +1,4 @@
+import os
 from os import path
 EXTRACT_DIR = "Extracted"
 DUMP_PATH = "Dumps"
@@ -35,5 +36,10 @@ if not path.exists(path.join(EXTRACT_DIR, "FlatData")):
         extract_path, abs_il2cpp_path, abs_metadata_path, 5
     )
     notice("Dump il2cpp binary file successfully.")
+    notice("Looking into extracted folder...")
+    for dir_path, _, files in os.walk(extract_path):
+            for file in files:
+                    notice(os.path.join(dir_path, file))
+
     compile_python(path.join(extract_path, "dump.cs"), EXTRACT_DIR)
     notice("Generated FlatData to dir: " + EXTRACT_DIR)

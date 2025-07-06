@@ -85,7 +85,7 @@ jobs:
           chmod 777 ./protoc ./protoc-gen-go
           ./protoc --proto_path=. --plugin=protoc-gen-go=./protoc-gen-go --go_out=. *.proto
 
-    - name: Fetch Resources
+    - name: Fetch Resources`
       run: chmod +x ./fetch_resources.sh && ./fetch_resources.sh
 
     - name: Build data
