@@ -3,7 +3,7 @@
 import json
 import os
 from os import path
-
+from lib.console import notice
 from lib.downloader import FileDownloader
 from utils.util import CommandUtils, FileUtils, ZipUtils
 
@@ -58,8 +58,10 @@ class IL2CppDumper:
         Raises:
             RuntimeError: Raise error when dump unsuccess.
         """
-
+        notice("Creating dir...")
         os.makedirs(extract_path, exist_ok=True)
+        notice("Dir created: "+extract_path)
+        notice("Dumper dir here: "+self.project_dir)
 
         success, err = CommandUtils.run_command(
             "dotnet",
@@ -72,6 +74,8 @@ class IL2CppDumper:
             cwd=self.project_dir,
         )
         if not success:
+            notice("Failed to extract, trying again... ")
+            notice("Error: "+err)
             if max_retries == 0:
                 raise RuntimeError(
                     f"Error occurred during dump the lib2cpp file. Retry might solve this issue. Info: {err}"
