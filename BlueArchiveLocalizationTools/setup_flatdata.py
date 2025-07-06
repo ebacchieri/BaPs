@@ -37,7 +37,7 @@ if not path.exists(path.join(EXTRACT_DIR, "FlatData")):
     )
     notice("Dump il2cpp binary file successfully.")
     notice("Looking into extracted folder...")
-    for dir_path, _, files in os.walk(extract_path):
+    for dir_path, _, files in os.walk(EXTRACT_DIR):
             for file in files:
                     notice(os.path.join(dir_path, file))
 
