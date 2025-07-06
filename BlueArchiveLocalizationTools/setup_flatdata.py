@@ -22,13 +22,17 @@ if not path.exists(path.join(EXTRACT_DIR, "FlatData")):
         TEMP_DIR, [METADATA_NAME], True
     )
 
+   notice("il2cpp_path: " + il2cpp_path)
+   notice("metadata_path: " + metadata_path)
+
     if not (il2cpp_path and metadata_path):
         raise FileNotFoundError(
             "Cannot find il2cpp binary file or global-metadata file. Make sure exist."
         )
     abs_il2cpp_path = path.abspath(il2cpp_path[0])
     abs_metadata_path = path.abspath(metadata_path[0])
-
+    notice("il2cpp_path: " + abs_il2cpp_path)
+   notice("metadata_path: " + abs_metadata_path)
     extract_path = path.abspath(path.join(EXTRACT_DIR, DUMP_PATH))
 
     print("Try to dump il2cpp...")
