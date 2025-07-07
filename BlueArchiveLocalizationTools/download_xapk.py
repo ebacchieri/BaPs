@@ -26,10 +26,7 @@ def download_xapk() -> str:
 
     apk_path = path.join(
         TEMP_DIR,
-        apk_data.headers["Content-Disposition"]
-        .rsplit('"', 2)[-2]
-        .encode("ISO8859-1")
-        .decode(),
+        "1.57.342698_BlueArchive-JP_CustomServer_AGP_v2.7"
     )
     apk_size = int(apk_data.headers.get("Content-Length", 0))
 
