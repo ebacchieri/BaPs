@@ -10,6 +10,7 @@ from UnityPy.files.File import ObjectReader
 from lib.console import ProgressBar
 import os
 import subprocess
+from lib.console import notice
 
 class TemplateString:
     """
