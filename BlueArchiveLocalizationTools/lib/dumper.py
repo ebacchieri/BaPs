@@ -20,7 +20,11 @@ class IL2CppDumper:
     def get_il2cpp_dumper(self, save_path: str) -> None:
         FileDownloader(IL2CPP_ZIP).save_file(path.join(save_path, ZIP_NAME))
         ZipUtils.extract_zip(path.join(save_path, ZIP_NAME), save_path)
-
+        notice("Config path to search: "+path.join(save_path, IL2CPP_FOLDER))
+        notice("Looking into extracted folder...")
+        for dir_path, _, files in os.walk(save_path):
+            for file in files:
+                    notice(os.path.join(dir_path, file))
         if not (
             config_path := FileUtils.find_files(
                 path.join(save_path, IL2CPP_FOLDER), ["config.json"], True
