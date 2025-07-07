@@ -10,9 +10,9 @@ def extract_apk_file(apk_path: str) -> None:
         apk_path, path.join(TEMP_DIR), keywords=["apk"]
     )
 
-    # ZipUtils.extract_zip(
-    #     apk_files, path.join(TEMP_DIR, "Data"), zips_dir=TEMP_DIR
-    # )
+    ZipUtils.extract_zip(
+        apk_files, path.join(TEMP_DIR, "Data"), zips_dir=TEMP_DIR
+    )
 
 if not path.exists(path.join(TEMP_DIR, "Data")):
     apk_path = download_xapk()
