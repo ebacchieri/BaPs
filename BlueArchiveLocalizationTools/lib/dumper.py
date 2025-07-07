@@ -8,7 +8,7 @@ from lib.downloader import FileDownloader
 from utils.util import CommandUtils, FileUtils, ZipUtils
 
 IL2CPP_ZIP = "https://github.com/akio7624/Il2CppDumper/releases/download/v25.06.25/Il2CppDumper-net8-akiobuild-v25.06.25.zip"
-IL2CPP_FOLDER = "Il2CppDumper-master"
+IL2CPP_FOLDER = ""
 ZIP_NAME = "Il2CppDumper-net8-akiobuild-v25.06.25.zip"
 
 
