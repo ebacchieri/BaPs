@@ -1,11 +1,11 @@
 from utils.util import ZipUtils
 from os import path
-from lib.console import notice
+
 from download_xapk import download_xapk
 TEMP_DIR = "Temp"
 def extract_apk_file(apk_path: str) -> None:
     """Extract the XAPK file."""
-    notice("APK Path: "+apk_path)
+    
     apk_files = ZipUtils.extract_zip(
         apk_path, path.join(TEMP_DIR), keywords=["apk"]
     )
