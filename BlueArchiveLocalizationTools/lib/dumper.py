@@ -70,7 +70,7 @@ class IL2CppDumper:
         success, err = CommandUtils.run_command(
            "dotnet",
            "exec",
-            "/home/runner/work/BaPs/BaPs/"+self.project_dir+"/Il2CppDumper.exe",
+            "/home/runner/work/BaPs/BaPs/"+self.project_dir+"/Il2CppDumper.dll",
             il2cpp_path,
             global_metadata_path,
             extract_path,
