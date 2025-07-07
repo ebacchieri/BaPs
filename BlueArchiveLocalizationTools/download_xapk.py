@@ -1,10 +1,10 @@
-apk_url = "https://d.apkpure.net/b/XAPK/com.YostarJP.BlueArchive?version=latest&nc=arm64-v8a&sv=24"
+apk_url = "https://github.com/Xuoos/AnimeGamesProxy/releases/download/2.7/1.57.342698_BlueArchive-JP_CustomServer_AGP_v2.7.apk"
 def download_xapk() -> str:
     import glob
     import os
     TEMP_DIR = "Temp"
     os.makedirs(TEMP_DIR, exist_ok=True)
-    apk_dir = glob.glob(f"./{TEMP_DIR}/*.xapk")
+    apk_dir = glob.glob(f"./{TEMP_DIR}/*.apk")
     if len(apk_dir) > 0:
         return apk_dir[0].replace("\\", "/")
     from lib.downloader import FileDownloader

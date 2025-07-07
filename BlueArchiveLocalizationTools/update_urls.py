@@ -136,5 +136,5 @@ if __name__ == "__main__":
     with open(args.output_path, "wb") as fs:
         server_url = get_server_url()
         addressable_catalog_url = get_addressable_catalog_url(server_url, args.json_output_path)
-        versionCode, versionName = get_apk_version_info(path.join(TEMP_DIR, "com.YostarJP.BlueArchive.apk"))
+        versionCode, versionName = get_apk_version_info(path.join(TEMP_DIR, "1.57.342698_BlueArchive-JP_CustomServer_AGP_v2.7"))
         fs.write(f"BA_SERVER_URL={server_url}\nADDRESSABLE_CATALOG_URL={addressable_catalog_url}\nBA_VERSION_CODE={versionCode}\nBA_VERSION_NAME={versionName}".encode())
