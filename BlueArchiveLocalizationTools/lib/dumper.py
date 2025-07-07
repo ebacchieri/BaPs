@@ -68,7 +68,8 @@ class IL2CppDumper:
         notice("Dumper dir here: "+self.project_dir)
 
         success, err = CommandUtils.run_command(
-           "start",
+           "dotnet",
+           "exec",
             "/home/runner/work/BaPs/BaPs/"+self.project_dir+"/Il2CppDumper.exe",
             il2cpp_path,
             global_metadata_path,
