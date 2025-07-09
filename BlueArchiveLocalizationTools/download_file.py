@@ -30,8 +30,8 @@ def download_filezip() -> str:
     )
     apk_size = int(apk_data.headers.get("Content-Length", 0))
 
-    if path.exists(apk_path) and path.getsize(apk_path) == apk_size:
-        return apk_path
+    # if path.exists(apk_path) and path.getsize(apk_path) == apk_size:
+    #     return apk_path
 
     FileDownloader(
         zip_url,
