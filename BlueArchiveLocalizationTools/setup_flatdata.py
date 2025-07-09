@@ -1,7 +1,7 @@
 import os
 import shutil
 from os import path
-from download_file import download_filezip
+from download_xapk import download_filezip
 from utils.util import ZipUtils
 EXTRACT_DIR = "Extracted"
 DUMP_PATH = "Dumps"
