@@ -10,7 +10,7 @@ def download_file() -> str:
     from lib.downloader import FileDownloader
     from lib.console import ProgressBar, notice
     from os import path
-    notice("Downloading rar...")
+    notice("Downloading zip...")
     if not (
         (
             apk_req := FileDownloader(
@@ -22,7 +22,7 @@ def download_file() -> str:
         )
         and (apk_data := apk_req.get_response(True))
     ):
-        raise LookupError("Cannot fetch rar info.")
+        raise LookupError("Cannot fetch zip info.")
 
     apk_path = path.join(
         TEMP_DIR,
