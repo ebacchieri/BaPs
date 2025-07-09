@@ -1,4 +1,4 @@
-zip_url = "https://drive.google.com/uc?export=download&id=1a9YEYLw3hRhcmlk2FZKZOKVYeCujG_cp"
+zip_url = "https://drive.google.com/uc?export=download&id=1ZC3FvMwFmTGNiUnUGO4P4xrsES6j3qeP"
 def download_filezip() -> str:
     import glob
     import os
@@ -28,7 +28,7 @@ def download_filezip() -> str:
 
     apk_path = path.join(
         TEMP_DIR,
-        "Dump.zip"
+        "Dump.rar"
     )
     apk_size = int(apk_data.headers.get("Content-Length", 0))
 
