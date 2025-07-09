@@ -1,5 +1,5 @@
-apk_url = "https://drive.google.com/uc?export=download&id=1a9YEYLw3hRhcmlk2FZKZOKVYeCujG_cp"
-def download_file() -> str:
+zip_url = "https://drive.google.com/uc?export=download&id=1a9YEYLw3hRhcmlk2FZKZOKVYeCujG_cp"
+def download_filezip() -> str:
     import glob
     import os
     TEMP_DIR = "Temp"
@@ -14,7 +14,7 @@ def download_file() -> str:
     if not (
         (
             apk_req := FileDownloader(
-                apk_url,
+                zip_url,
                 request_method="get",
                 use_cloud_scraper=True,
                 verbose=True,
@@ -34,7 +34,7 @@ def download_file() -> str:
         return apk_path
 
     FileDownloader(
-        apk_url,
+        zip_url,
         request_method="get",
         enable_progress=True,
         use_cloud_scraper=True,
