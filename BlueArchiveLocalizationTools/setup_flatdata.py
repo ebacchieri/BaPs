@@ -1,7 +1,7 @@
 import os
 import shutil
 from os import path
-from download_xapk import download_filezip
+from download_file import download_filezip
 from utils.util import ZipUtils
 EXTRACT_DIR = "Extracted"
 DUMP_PATH = "Dumps"
@@ -52,7 +52,7 @@ if not path.exists(path.join(EXTRACT_DIR, "FlatData")):
     def extract_zip_file(zip_path: str) -> None:    
         notice("Zip Path: "+zip_path)
         apk_files = ZipUtils.extract_zip(
-            zip_path, path.join(TEMP_DIR), keywords=["zip"]
+            zip_path, path.join(TEMP_DIR), keywords=["Dump.zip"]
         )
 
         ZipUtils.extract_zip(
@@ -61,6 +61,7 @@ if not path.exists(path.join(EXTRACT_DIR, "FlatData")):
 
     notice("Begining zip download...")
     zip_path = download_filezip()
+
     extract_zip_file(zip_path)
     
     compile_python(path.join(extract_path, "dump.cs"), EXTRACT_DIR)

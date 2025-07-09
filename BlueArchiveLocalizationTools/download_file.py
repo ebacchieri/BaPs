@@ -4,9 +4,9 @@ def download_filezip() -> str:
     import os
     TEMP_DIR = "Temp"
     os.makedirs(TEMP_DIR, exist_ok=True)
-    apk_dir = glob.glob(f"./{TEMP_DIR}/*.zip")
-    if len(apk_dir) > 0:
-        return apk_dir[0].replace("\\", "/")
+    # apk_dir = glob.glob(f"./{TEMP_DIR}/*.zip")
+    # if len(apk_dir) > 0:
+    #     return apk_dir[0].replace("\\", "/")
     from lib.downloader import FileDownloader
     from lib.console import ProgressBar, notice
     from os import path
