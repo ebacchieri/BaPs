@@ -1,5 +1,8 @@
 import os
+import shutil
 from os import path
+from download_file import download_file
+from utils.util import ZipUtils
 EXTRACT_DIR = "Extracted"
 DUMP_PATH = "Dumps"
 if not path.exists(path.join(EXTRACT_DIR, "FlatData")):
@@ -43,7 +46,22 @@ if not path.exists(path.join(EXTRACT_DIR, "FlatData")):
         extract_path, abs_il2cpp_path, abs_metadata_path, 5
     )
     notice("Dump il2cpp binary file successfully.")
-    
+    DUMP_DIR = "/home/runner/work/BaPs/BaPs/Dump"
+    notice("Looking into extracted folder...")
+    DUMP_LINK="https://drive.google.com/uc?export=download&id=1ZC3FvMwFmTGNiUnUGO4P4xrsES6j3qeP"
+    def extract_zip_file(zip_path: str) -> None:    
+        notice("Zip Path: "+zip_path)
+        apk_files = ZipUtils.extract_zip(
+            zip_path, path.join(TEMP_DIR), keywords=["zip"]
+        )
 
+        ZipUtils.extract_zip(
+            apk_files, EXTRACT_DIR, zips_dir=TEMP_DIR
+        )
+
+
+    zip_path = download_file()
+    extract_zip_file(zip_path)
+    
     compile_python(path.join(extract_path, "dump.cs"), EXTRACT_DIR)
     notice("Generated FlatData to dir: " + EXTRACT_DIR)

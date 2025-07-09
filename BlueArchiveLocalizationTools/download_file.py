@@ -1,16 +1,16 @@
-apk_url = "https://d.apkpure.net/b/XAPK/com.YostarJP.BlueArchive?version=latest&nc=arm64-v8a&sv=24"
-def download_xapk() -> str:
+apk_url = "https://drive.google.com/uc?export=download&id=1a9YEYLw3hRhcmlk2FZKZOKVYeCujG_cp"
+def download_file() -> str:
     import glob
     import os
     TEMP_DIR = "Temp"
     os.makedirs(TEMP_DIR, exist_ok=True)
-    apk_dir = glob.glob(f"./{TEMP_DIR}/*.xapk")
+    apk_dir = glob.glob(f"./{TEMP_DIR}/*.zip")
     if len(apk_dir) > 0:
         return apk_dir[0].replace("\\", "/")
     from lib.downloader import FileDownloader
     from lib.console import ProgressBar, notice
     from os import path
-    notice("Downloading XAPK...")
+    notice("Downloading rar...")
     if not (
         (
             apk_req := FileDownloader(
@@ -22,14 +22,11 @@ def download_xapk() -> str:
         )
         and (apk_data := apk_req.get_response(True))
     ):
-        raise LookupError("Cannot fetch apk info.")
+        raise LookupError("Cannot fetch rar info.")
 
     apk_path = path.join(
         TEMP_DIR,
-        apk_data.headers["Content-Disposition"]
-        .rsplit('"', 2)[-2]
-        .encode("ISO8859-1")
-        .decode(),
+        "Dump.zip"
     )
     apk_size = int(apk_data.headers.get("Content-Length", 0))
 
