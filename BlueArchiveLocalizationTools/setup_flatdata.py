@@ -59,7 +59,7 @@ if not path.exists(path.join(EXTRACT_DIR, "FlatData")):
             apk_files, EXTRACT_DIR, zips_dir=TEMP_DIR
         )
 
-
+    notice("Begining zip download...")
     zip_path = download_filezip()
     extract_zip_file(zip_path)
     

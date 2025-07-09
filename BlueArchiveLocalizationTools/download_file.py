@@ -11,6 +11,8 @@ def download_filezip() -> str:
     from lib.console import ProgressBar, notice
     from os import path
     notice("Downloading zip...")
+    notice("Downloading zip from url: "+zip_url)
+
     if not (
         (
             apk_req := FileDownloader(
