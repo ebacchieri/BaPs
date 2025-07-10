@@ -60,12 +60,12 @@ if not path.exists(path.join(EXTRACT_DIR, "FlatData")):
         )
 
     notice("Begining zip download...")
-    zip_path = download_filezip()
+    zip_path = download_filezip(extract_path)
     notice("Looking into extracted folder...")
     for dir_path, _, files in os.walk(save_path):
         for file in files:
             notice(os.path.join(dir_path, file))
-    extract_zip_file(zip_path)
+    
     
     compile_python(path.join(extract_path, "dump.cs"), EXTRACT_DIR)
     notice("Generated FlatData to dir: " + EXTRACT_DIR)

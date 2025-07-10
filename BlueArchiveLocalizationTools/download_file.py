@@ -1,7 +1,12 @@
-zip_url = "https://drive.google.com/uc?export=download&id=1ZC3FvMwFmTGNiUnUGO4P4xrsES6j3qeP"
-def download_filezip() -> str:
+f_url1 = "https://drive.google.com/uc?export=download&id=1wCpIqTbCusU323VXGM0Px4jsM85XG_MD"
+f_url2 = "https://drive.google.com/uc?export=download&id=1nH11IQpMRIj1NpidiwFymvTbpSxpOr-q"
+f_url3 = "https://drive.google.com/uc?export=download&id=1bYEtTSVJWhDlhKQrgExrMwXYnVJX1vDG"
+f_url4 = "https://drive.google.com/uc?export=download&id=1_Aj1omcWG4a23cqNEAHSoDqeomp3BXxT"
+f_url = [f_url1, f_url2, f_url3, f_url4]
+def download_files(extract_path: str) -> list[str]:
     import glob
     import os
+    import shutil
     TEMP_DIR = "Temp"
     os.makedirs(TEMP_DIR, exist_ok=True)
     # apk_dir = glob.glob(f"./{TEMP_DIR}/*.zip")
@@ -10,13 +15,12 @@ def download_filezip() -> str:
     from lib.downloader import FileDownloader
     from lib.console import ProgressBar, notice
     from os import path
-    notice("Downloading zip...")
-    notice("Downloading zip from url: "+zip_url)
+    notice("Downloading dump files...")    
 
     if not (
         (
             apk_req := FileDownloader(
-                zip_url,
+                f_url1,
                 request_method="get",
                 use_cloud_scraper=True,
                 verbose=True,
@@ -26,20 +30,33 @@ def download_filezip() -> str:
     ):
         raise LookupError("Cannot fetch zip info.")
 
-    apk_path = path.join(
-        TEMP_DIR,
-        "Dump.rar"
+    path1 = path.join(
+        extract_path,
+        "dump.cs"
     )
-    apk_size = int(apk_data.headers.get("Content-Length", 0))
+    path2 = path.join(
+        extract_path,
+        "il2cpp.h"
+    )
+    path3 = path.join(
+        extract_path,
+        "script.json"
+    )
+    path4 = path.join(
+        extract_path,
+        "stringliteral.json"
+    )
+    paths = [path1, path2, path3, path4]
+    # apk_size = int(apk_data.headers.get("Content-Length", 0))
 
     # if path.exists(apk_path) and path.getsize(apk_path) == apk_size:
     #     return apk_path
-
-    FileDownloader(
-        zip_url,
-        request_method="get",
-        enable_progress=True,
-        use_cloud_scraper=True,
-    ).save_file(apk_path)
-
-    return apk_path.replace("\\", "/")
+    for x in range(1, 5):
+        notice("Downloading url: "+f_url[x])
+        FileDownloader(
+            f_url[x],
+            request_method="get",
+            enable_progress=True,
+            use_cloud_scraper=True,
+        ).save_file(paths[x])    
+    return '|'.join(path).replace("\\", "/")
