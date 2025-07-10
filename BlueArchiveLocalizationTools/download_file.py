@@ -59,4 +59,4 @@ def download_files(extract_path: str) -> list[str]:
             enable_progress=True,
             use_cloud_scraper=True,
         ).save_file(paths[x])    
-    return '|'.join(path).replace("\\", "/")
+    return '|'.join(paths).replace("\\", "/")
