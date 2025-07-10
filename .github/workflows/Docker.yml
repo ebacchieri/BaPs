@@ -16,7 +16,7 @@ jobs:
       - name: Sync BaPs
         uses: actions/checkout@v4
         with:
-          repository: gucooing/BaPs
+          repository: ebacchieri/BaPs
           ref: "main"
           fetch-depth: '1'
           token: ${{ secrets.TOKEN }}
@@ -70,4 +70,4 @@ jobs:
             sha=${{ env.SHA }}
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/gucooing/baps:latest
+          tags: ghcr.io/ebacchieri/BaPs:latest
