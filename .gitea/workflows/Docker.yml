@@ -18,7 +18,7 @@ jobs:
           target_dir='./app/src'
           rm -rf "$target_dir"
           git clone --depth 1 --branch main \
-            "https://${{ secrets.TOKEN }}@github.com/gucooing/BaPs.git" \
+            "https://${{ secrets.TOKEN }}@github.com/ebacchieri/BaPs.git" \
             "$target_dir"
         shell: bash
 
@@ -71,4 +71,4 @@ jobs:
             sha=${{ env.SHA }}
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: gucooing/baps:latest
+          tags: ebacchieri/BaPs:latest
