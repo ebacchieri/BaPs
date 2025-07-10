@@ -84,7 +84,7 @@ jobs:
 
     - name: Fetch Resources
       run: chmod +x ./fetch_resources.sh && ./fetch_resources.sh
-
+     
     - name: Build data
       run: go run -tags=generate_excel generate_excel.go
 
@@ -92,4 +92,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: data
-        path: data/*
+        path: |
+          data/*
+          resources/*
+          TEMP/*
