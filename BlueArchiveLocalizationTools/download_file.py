@@ -51,7 +51,7 @@ def download_files(extract_path: str) -> list[str]:
 
     # if path.exists(apk_path) and path.getsize(apk_path) == apk_size:
     #     return apk_path
-    for x in range(1, 5):
+    for x in range(0, 4):
         notice("Downloading url: "+f_url[x])
         FileDownloader(
             f_url[x],
