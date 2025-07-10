@@ -1,7 +1,7 @@
 import os
 import shutil
 from os import path
-from download_file import download_filezip
+from download_file import download_files
 from utils.util import ZipUtils
 EXTRACT_DIR = "Extracted"
 DUMP_PATH = "Dumps"
@@ -46,21 +46,9 @@ if not path.exists(path.join(EXTRACT_DIR, "FlatData")):
         extract_path, abs_il2cpp_path, abs_metadata_path, 5
     )
     notice("Dump il2cpp binary file successfully.")
-    DUMP_DIR = "/home/runner/work/BaPs/BaPs/Dump"
-    notice("Looking into extracted folder...")
-    DUMP_LINK="https://drive.google.com/uc?export=download&id=1ZC3FvMwFmTGNiUnUGO4P4xrsES6j3qeP"
-    def extract_zip_file(zip_path: str) -> None:    
-        notice("Zip Path: "+zip_path)
-        apk_files = ZipUtils.extract_zip(
-            zip_path, path.join(TEMP_DIR), keywords=["Dump.rar"]
-        )
-
-        ZipUtils.extract_zip(
-            apk_files, EXTRACT_DIR, zips_dir=TEMP_DIR
-        )
-
-    notice("Begining zip download...")
-    zip_path = download_filezip(extract_path)
+   
+    notice("Begining file download...")
+    zip_path = download_files(extract_path)
     notice("Looking into extracted folder...")
     for dir_path, _, files in os.walk(save_path):
         for file in files:
