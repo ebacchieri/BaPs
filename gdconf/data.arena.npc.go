@@ -5,8 +5,8 @@ import (
 	"math/rand"
 	"os"
 
-	"github.com/gucooing/BaPs/pkg/logger"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 )
 
 type ArenaNPCInfo struct {

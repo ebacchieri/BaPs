@@ -3,8 +3,8 @@ package gdconf
 import (
 	"time"
 
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/pkg/logger"
+	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/pkg/logger"
 )
 
 func (g *GameConfig) loadArenaSeasonExcelTable() {

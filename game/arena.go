@@ -2,16 +2,16 @@ package game
 
 import (
 	"fmt"
-	"github.com/gucooing/BaPs/protocol/mx"
+	"github.com/ebacchieri/BaPs/protocol/mx"
 	"time"
 
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/common/rank"
-	ranar "github.com/gucooing/BaPs/common/rank_arena"
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/pkg/alg"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"github.com/ebacchieri/BaPs/common/enter"
+	"github.com/ebacchieri/BaPs/common/rank"
+	ranar "github.com/ebacchieri/BaPs/common/rank_arena"
+	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/gdconf"
+	"github.com/ebacchieri/BaPs/pkg/alg"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 )
 
 const (

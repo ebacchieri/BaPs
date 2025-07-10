@@ -3,11 +3,11 @@ package enter
 import (
 	"time"
 
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/pkg/alg"
-	"github.com/gucooing/BaPs/pkg/logger"
-	"github.com/gucooing/BaPs/protocol/proto"
+	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/gdconf"
+	"github.com/ebacchieri/BaPs/pkg/alg"
+	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 )
 
 type Mission struct {

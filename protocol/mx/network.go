@@ -9,7 +9,7 @@ import (
 	"math/rand"
 
 	"github.com/gin-gonic/gin"
-	"github.com/gucooing/BaPs/pkg/alg"
+	"github.com/ebacchieri/BaPs/pkg/alg"
 )
 
 func GetFormMx(c *gin.Context) ([]byte, error) {

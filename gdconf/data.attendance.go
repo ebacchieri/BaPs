@@ -3,7 +3,7 @@ package gdconf
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/pkg/logger"
 	"os"
 )
 

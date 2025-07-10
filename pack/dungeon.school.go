@@ -1,12 +1,12 @@
 package pack
 
 import (
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/game"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/pkg/logger"
-	"github.com/gucooing/BaPs/protocol/mx"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"github.com/ebacchieri/BaPs/common/enter"
+	"github.com/ebacchieri/BaPs/game"
+	"github.com/ebacchieri/BaPs/gdconf"
+	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/protocol/mx"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 )
 
 func SchoolDungeonList(s *enter.Session, request, response mx.Message) {

@@ -1,13 +1,13 @@
 package game
 
 import (
-	dbstruct "github.com/gucooing/BaPs/db/struct"
-	"github.com/gucooing/BaPs/protocol/mx"
+	dbstruct "github.com/ebacchieri/BaPs/db/struct"
+	"github.com/ebacchieri/BaPs/protocol/mx"
 	"time"
 
-	"github.com/gucooing/BaPs/common/enter"
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"github.com/ebacchieri/BaPs/common/enter"
+	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 )
 
 const (

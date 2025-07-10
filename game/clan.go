@@ -3,13 +3,13 @@ package game
 import (
 	"math/rand"
 
-	"github.com/gucooing/BaPs/common/check"
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/config"
-	"github.com/gucooing/BaPs/db"
-	"github.com/gucooing/BaPs/pkg/alg"
-	"github.com/gucooing/BaPs/pkg/logger"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"github.com/ebacchieri/BaPs/common/check"
+	"github.com/ebacchieri/BaPs/common/enter"
+	"github.com/ebacchieri/BaPs/config"
+	"github.com/ebacchieri/BaPs/db"
+	"github.com/ebacchieri/BaPs/pkg/alg"
+	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 )
 
 func GetClanServerId(s *enter.Session) int64 {

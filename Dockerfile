@@ -11,7 +11,7 @@ COPY . .
 
 RUN --mount=type=secret,id=sha,env=SHA \
     GOOS=$TARGETOS GOARCH=$TARGETARCH go build \
-    -ldflags="-s -w -X github.com/gucooing/BaPs/protocol/mx.Docker=1 -X github.com/gucooing/BaPs/pkg.Commit=$SHA" \
+    -ldflags="-s -w -X github.com/ebacchieri/BaPs/protocol/mx.Docker=1 -X github.com/ebacchieri/BaPs/pkg.Commit=$SHA" \
     -o /usr/ba/BaPs \
     ./cmd/BaPs/BaPs.go
 
@@ -20,7 +20,7 @@ COPY ./resources/ /usr/ba/resources/
 
 RUN --mount=type=secret,id=sha,env=SHA \
     GOOS=$TARGETOS GOARCH=$TARGETARCH go build "-tags=debug" \
-    -ldflags="-s -w -X github.com/gucooing/BaPs/protocol/mx.Docker=1 -X github.com/gucooing/BaPs/pkg.Commit=$SHA" \
+    -ldflags="-s -w -X github.com/ebacchieri/BaPs/protocol/mx.Docker=1 -X github.com/ebacchieri/BaPs/pkg.Commit=$SHA" \
     -o /usr/ba/GenExcelBin \
     ./cmd/GenExcelBin/main.go
 

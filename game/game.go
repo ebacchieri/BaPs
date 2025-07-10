@@ -3,10 +3,10 @@ package game
 import (
 	"time"
 
-	"github.com/gucooing/BaPs/common/enter"
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/pkg/alg"
-	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/common/enter"
+	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/pkg/alg"
+	"github.com/ebacchieri/BaPs/pkg/logger"
 )
 
 func GetServerId(s *enter.Session) int64 {

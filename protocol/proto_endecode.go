@@ -3,11 +3,11 @@ package protocol
 import (
 	"errors"
 	"fmt"
-	"github.com/gucooing/BaPs/protocol/mx"
+	"github.com/ebacchieri/BaPs/protocol/mx"
 
 	"github.com/bytedance/sonic"
-	"github.com/gucooing/BaPs/protocol/cmd"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"github.com/ebacchieri/BaPs/protocol/cmd"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 )
 
 type NetworkProtocolResponse struct {

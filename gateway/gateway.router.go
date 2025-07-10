@@ -5,14 +5,14 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/gucooing/BaPs/common/check"
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/game"
-	"github.com/gucooing/BaPs/pack"
-	"github.com/gucooing/BaPs/pkg/logger"
-	"github.com/gucooing/BaPs/protocol/cmd"
-	"github.com/gucooing/BaPs/protocol/mx"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"github.com/ebacchieri/BaPs/common/check"
+	"github.com/ebacchieri/BaPs/common/enter"
+	"github.com/ebacchieri/BaPs/game"
+	"github.com/ebacchieri/BaPs/pack"
+	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/protocol/cmd"
+	"github.com/ebacchieri/BaPs/protocol/mx"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 )
 
 type handlerFunc func(s *enter.Session, request, response mx.Message)

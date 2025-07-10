@@ -3,8 +3,8 @@ package gdconf
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/gucooing/BaPs/config"
-	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/config"
+	"github.com/ebacchieri/BaPs/pkg/logger"
 	"os"
 	"sync"
 	"time"

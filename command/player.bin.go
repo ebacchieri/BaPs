@@ -3,10 +3,10 @@ package command
 import (
 	"encoding/base64"
 	"fmt"
-	"github.com/gucooing/BaPs/game"
+	"github.com/ebacchieri/BaPs/game"
 
 	"github.com/bytedance/sonic"
-	"github.com/gucooing/BaPs/common/enter"
+	"github.com/ebacchieri/BaPs/common/enter"
 	"github.com/gucooing/cdq"
 )
 

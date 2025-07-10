@@ -3,9 +3,9 @@ package mail
 import (
 	"bytes"
 	"errors"
-	"github.com/gucooing/BaPs/config"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/config"
+	"github.com/ebacchieri/BaPs/gdconf"
+	"github.com/ebacchieri/BaPs/pkg/logger"
 	"github.com/wneessen/go-mail"
 	ht "html/template"
 	tt "text/template"

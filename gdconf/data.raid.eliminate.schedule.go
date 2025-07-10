@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/pkg/logger"
 )
 
 type RaidEliminateSchedule struct {
