@@ -2,7 +2,7 @@ package command
 
 import (
 	"fmt"
-	"./common/mail"
+	"github.com/gucooing/BaPs/common/mail"
 	"github.com/gucooing/cdq"
 	"strings"
 )

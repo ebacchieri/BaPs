@@ -2,13 +2,13 @@ package command
 
 import (
 	"fmt"
-	sro "./common/server_only"
-	"./gdconf"
-	"./protocol/mx"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/gdconf"
+	"github.com/gucooing/BaPs/protocol/mx"
 	"time"
 
-	"./common/enter"
-	"./game"
+	"github.com/gucooing/BaPs/common/enter"
+	"github.com/gucooing/BaPs/game"
 	"github.com/gucooing/cdq"
 )
 

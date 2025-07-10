@@ -1,15 +1,15 @@
 package pack
 
 import (
-	"./protocol/mx"
+	"github.com/gucooing/BaPs/protocol/mx"
 	"time"
 
-	"./common/enter"
-	sro "./common/server_only"
-	"./game"
-	"./pkg/alg"
-	"./pkg/logger"
-	"./protocol/proto"
+	"github.com/gucooing/BaPs/common/enter"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/game"
+	"github.com/gucooing/BaPs/pkg/alg"
+	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func ClanLogin(s *enter.Session, request, response mx.Message) {

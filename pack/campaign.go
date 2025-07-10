@@ -1,11 +1,11 @@
 package pack
 
 import (
-	"./common/enter"
-	"./game"
-	"./gdconf"
-	"./protocol/mx"
-	"./protocol/proto"
+	"github.com/gucooing/BaPs/common/enter"
+	"github.com/gucooing/BaPs/game"
+	"github.com/gucooing/BaPs/gdconf"
+	"github.com/gucooing/BaPs/protocol/mx"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func CampaignList(s *enter.Session, request, response mx.Message) {

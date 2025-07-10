@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"./"
-	"./pkg/logger"
+	"github.com/gucooing/BaPs"
+	"github.com/gucooing/BaPs/pkg/logger"
 )
 
 func main() {

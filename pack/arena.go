@@ -1,13 +1,13 @@
 package pack
 
 import (
-	"./protocol/mx"
+	"github.com/gucooing/BaPs/protocol/mx"
 	"time"
 
-	"./common/enter"
-	"./common/rank"
-	"./game"
-	"./protocol/proto"
+	"github.com/gucooing/BaPs/common/enter"
+	"github.com/gucooing/BaPs/common/rank"
+	"github.com/gucooing/BaPs/game"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func ArenaLogin(s *enter.Session, request, response mx.Message) {

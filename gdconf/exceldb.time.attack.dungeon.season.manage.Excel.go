@@ -3,8 +3,8 @@ package gdconf
 import (
 	"time"
 
-	sro "./common/server_only"
-	"./pkg/logger"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/pkg/logger"
 )
 
 func (g *GameConfig) loadTimeAttackDungeonSeasonManageExcelTable() {

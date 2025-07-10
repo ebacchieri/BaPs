@@ -3,11 +3,11 @@ package game
 import (
 	"math/rand"
 
-	"./common/enter"
-	sro "./common/server_only"
-	"./gdconf"
-	"./pkg/logger"
-	"./protocol/proto"
+	"github.com/gucooing/BaPs/common/enter"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/gdconf"
+	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func GetGachaBin(s *enter.Session) *sro.GachaBin {

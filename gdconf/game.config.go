@@ -3,14 +3,14 @@ package gdconf
 import (
 	"encoding/json"
 	"fmt"
-	"./config"
+	"github.com/gucooing/BaPs/config"
 	"os"
 	"runtime"
 	"strings"
 	"time"
 
-	sro "./common/server_only"
-	"./pkg/logger"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/pkg/logger"
 )
 
 var GC *GameConfig

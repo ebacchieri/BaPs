@@ -3,10 +3,10 @@ package rank
 import (
 	"time"
 
-	"./db"
-	"./gdconf"
-	"./pkg/logger"
-	"./pkg/zset"
+	"github.com/gucooing/BaPs/db"
+	"github.com/gucooing/BaPs/gdconf"
+	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/pkg/zset"
 )
 
 // NewRaidRank 此操作会将排名强制覆盖成冷数据中的排名，建议仅用于初始化这个赛季时拉取冷数据使用

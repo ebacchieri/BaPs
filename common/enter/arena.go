@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"./common/rank"
-	"./gdconf"
+	"github.com/gucooing/BaPs/common/rank"
+	"github.com/gucooing/BaPs/gdconf"
 )
 
 type ArenaInfo struct {

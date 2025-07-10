@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"./pkg/logger"
+	"github.com/gucooing/BaPs/pkg/logger"
 )
 
 type RaidSchedule struct {

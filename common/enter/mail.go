@@ -2,12 +2,12 @@ package enter
 
 import (
 	"encoding/json"
-	"./common/check"
-	dbstruct "./db/struct"
+	"github.com/gucooing/BaPs/common/check"
+	dbstruct "github.com/gucooing/BaPs/db/struct"
 
-	"./db"
-	"./pkg/logger"
-	"./protocol/proto"
+	"github.com/gucooing/BaPs/db"
+	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func (e *EnterSet) checkMail() {

@@ -3,15 +3,15 @@ package enter
 import (
 	"errors"
 	"github.com/bytedance/sonic"
-	"./common/check"
-	dbstruct "./db/struct"
-	"./protocol/mx"
+	"github.com/gucooing/BaPs/common/check"
+	dbstruct "github.com/gucooing/BaPs/db/struct"
+	"github.com/gucooing/BaPs/protocol/mx"
 	"time"
 
-	"./db"
-	"./pkg/alg"
-	"./pkg/logger"
-	"./protocol/proto"
+	"github.com/gucooing/BaPs/db"
+	"github.com/gucooing/BaPs/pkg/alg"
+	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 var MaxCacheYostarClanTime = 30 // 最大玩家缓存时间 单位:分

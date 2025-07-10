@@ -4,12 +4,12 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
-	dbstruct "./db/struct"
+	dbstruct "github.com/gucooing/BaPs/db/struct"
 	"time"
 
-	"./common/enter"
-	sro "./common/server_only"
-	"./game"
+	"github.com/gucooing/BaPs/common/enter"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/game"
 	"github.com/gucooing/cdq"
 )
 

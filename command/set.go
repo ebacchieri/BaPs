@@ -2,12 +2,12 @@ package command
 
 import (
 	"fmt"
-	"./config"
-	"./protocol/mx"
+	"github.com/gucooing/BaPs/config"
+	"github.com/gucooing/BaPs/protocol/mx"
 	"time"
 
-	"./common/enter"
-	"./game"
+	"github.com/gucooing/BaPs/common/enter"
+	"github.com/gucooing/BaPs/game"
 	"github.com/gucooing/cdq"
 )
 

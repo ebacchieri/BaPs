@@ -5,7 +5,7 @@ package gateway
 
 import (
 	"github.com/gin-gonic/gin"
-	"./protocol/mx"
+	"github.com/gucooing/BaPs/protocol/mx"
 )
 
 func status(router *gin.Engine) {

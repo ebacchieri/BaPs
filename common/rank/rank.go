@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"sync"
 
-	ranar "./common/rank_arena"
-	"./config"
-	"./db"
-	"./gdconf"
-	"./pkg/logger"
-	"./pkg/zset"
+	ranar "github.com/gucooing/BaPs/common/rank_arena"
+	"github.com/gucooing/BaPs/config"
+	"github.com/gucooing/BaPs/db"
+	"github.com/gucooing/BaPs/gdconf"
+	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/pkg/zset"
 	"gorm.io/gorm"
 )
 

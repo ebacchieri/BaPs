@@ -2,7 +2,7 @@ package sdk
 
 import (
 	"github.com/gin-gonic/gin"
-	"./gdconf"
+	"github.com/gucooing/BaPs/gdconf"
 )
 
 func index(c *gin.Context) {

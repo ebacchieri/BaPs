@@ -2,7 +2,7 @@ package db_gorm
 
 import (
 	"errors"
-	dbstruct "./db/struct"
+	dbstruct "github.com/gucooing/BaPs/db/struct"
 )
 
 func (x *DbGorm) GetAllYostarMail() []*dbstruct.YostarMail {

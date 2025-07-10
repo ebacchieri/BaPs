@@ -1,15 +1,15 @@
 package pack
 
 import (
-	"./protocol/mx"
+	"github.com/gucooing/BaPs/protocol/mx"
 	"strings"
 
-	"./common/enter"
-	sro "./common/server_only"
-	"./game"
-	"./gdconf"
-	"./pkg/logger"
-	"./protocol/proto"
+	"github.com/gucooing/BaPs/common/enter"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/game"
+	"github.com/gucooing/BaPs/gdconf"
+	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func CharacterList(s *enter.Session, request, response mx.Message) {

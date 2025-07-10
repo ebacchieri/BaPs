@@ -9,7 +9,7 @@ import (
 	"sort"
 	"testing"
 
-	"./pkg/zset/cmp"
+	"github.com/gucooing/BaPs/pkg/zset/cmp"
 )
 
 var negzero = math.Copysign(0, -1)

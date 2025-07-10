@@ -4,7 +4,7 @@ package proto
 
 import (
 	"github.com/bytedance/sonic"
-	"./protocol/mx"
+	"github.com/gucooing/BaPs/protocol/mx"
 )
 
 type EchelonPresetGroupRenameResponse struct {

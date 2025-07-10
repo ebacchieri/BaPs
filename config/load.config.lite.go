@@ -4,7 +4,7 @@ package config
 
 import (
 	"fmt"
-	"./pkg/alg"
+	"github.com/gucooing/BaPs/pkg/alg"
 	"net"
 )
 

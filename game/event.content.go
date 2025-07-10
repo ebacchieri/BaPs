@@ -1,10 +1,10 @@
 package game
 
 import (
-	"./common/enter"
-	sro "./common/server_only"
-	"./protocol/mx"
-	"./protocol/proto"
+	"github.com/gucooing/BaPs/common/enter"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/protocol/mx"
+	"github.com/gucooing/BaPs/protocol/proto"
 	"time"
 )
 

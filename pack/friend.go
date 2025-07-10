@@ -1,14 +1,14 @@
 package pack
 
 import (
-	"./protocol/mx"
+	"github.com/gucooing/BaPs/protocol/mx"
 	"math/rand"
 
-	"./common/enter"
-	"./game"
-	"./pkg/alg"
-	"./pkg/logger"
-	"./protocol/proto"
+	"github.com/gucooing/BaPs/common/enter"
+	"github.com/gucooing/BaPs/game"
+	"github.com/gucooing/BaPs/pkg/alg"
+	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func FriendCheck(s *enter.Session, request, response mx.Message) {

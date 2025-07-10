@@ -3,7 +3,7 @@ package sdk
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"./config"
+	"github.com/gucooing/BaPs/config"
 	"net/http"
 )
 

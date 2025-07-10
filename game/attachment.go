@@ -1,13 +1,13 @@
 package game
 
 import (
-	"./protocol/mx"
+	"github.com/gucooing/BaPs/protocol/mx"
 	"time"
 
-	"./common/enter"
-	sro "./common/server_only"
-	"./gdconf"
-	"./protocol/proto"
+	"github.com/gucooing/BaPs/common/enter"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/gdconf"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func NewAttachmentBin() *sro.AttachmentBin {

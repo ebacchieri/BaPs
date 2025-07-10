@@ -2,7 +2,7 @@ package gdconf
 
 import (
 	"encoding/json"
-	"./pkg/logger"
+	"github.com/gucooing/BaPs/pkg/logger"
 	ht "html/template"
 	"os"
 	tt "text/template"

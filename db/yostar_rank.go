@@ -10,7 +10,7 @@ import (
 	"log"
 	"time"
 
-	"./config"
+	"github.com/gucooing/BaPs/config"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )

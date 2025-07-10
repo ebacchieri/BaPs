@@ -3,8 +3,8 @@ package enter
 import (
 	"errors"
 	"github.com/bytedance/sonic"
-	"./db"
-	dbstruct "./db/struct"
+	"github.com/gucooing/BaPs/db"
+	dbstruct "github.com/gucooing/BaPs/db/struct"
 )
 
 type AccountFriend struct {

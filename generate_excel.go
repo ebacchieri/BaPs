@@ -15,7 +15,7 @@ import (
 	"strconv"
 	"strings"
 
-	pb "./common/server_only"
+	pb "github.com/gucooing/BaPs/common/server_only"
 
 	"google.golang.org/protobuf/proto"
 )

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"./pkg/logger"
+	"github.com/gucooing/BaPs/pkg/logger"
 )
 
 type StrategyMap struct {

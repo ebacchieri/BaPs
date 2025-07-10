@@ -3,8 +3,8 @@ package command
 import (
 	"fmt"
 	"github.com/bytedance/sonic"
-	"./common/check"
-	"./pkg"
+	"github.com/gucooing/BaPs/common/check"
+	"github.com/gucooing/BaPs/pkg"
 	"github.com/gucooing/cdq"
 	"github.com/shirou/gopsutil/cpu"
 	"github.com/shirou/gopsutil/mem"

@@ -2,20 +2,20 @@ package enter
 
 import (
 	"fmt"
-	"./common/check"
-	dbstruct "./db/struct"
-	"./protocol/mx"
+	"github.com/gucooing/BaPs/common/check"
+	dbstruct "github.com/gucooing/BaPs/db/struct"
+	"github.com/gucooing/BaPs/protocol/mx"
 	"os"
 	"path/filepath"
 	"strings"
 	"sync/atomic"
 	"time"
 
-	sro "./common/server_only"
-	"./db"
-	"./pkg/alg"
-	"./pkg/logger"
-	"./protocol/proto"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/db"
+	"github.com/gucooing/BaPs/pkg/alg"
+	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/protocol/proto"
 	pb "google.golang.org/protobuf/proto"
 )
 

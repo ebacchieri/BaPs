@@ -34,7 +34,7 @@ import (
 	"math/rand"
 	"sync"
 
-	"./pkg/zset/cmp"
+	"github.com/gucooing/BaPs/pkg/zset/cmp"
 )
 
 const (
