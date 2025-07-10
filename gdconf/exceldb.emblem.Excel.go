@@ -1,8 +1,8 @@
 package gdconf
 
 import (
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/pkg/logger"
+	sro "./common/server_only"
+	"./pkg/logger"
 )
 
 func (g *GameConfig) loadEmblemExcel() {

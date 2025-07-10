@@ -1,15 +1,15 @@
 package pack
 
 import (
-	"github.com/gucooing/BaPs/protocol/mx"
+	"./protocol/mx"
 	"time"
 
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/common/rank"
-	"github.com/gucooing/BaPs/game"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/pkg/logger"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"./common/enter"
+	"./common/rank"
+	"./game"
+	"./gdconf"
+	"./pkg/logger"
+	"./protocol/proto"
 )
 
 func EliminateRaidLogin(s *enter.Session, request, response mx.Message) {

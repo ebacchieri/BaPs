@@ -1,9 +1,9 @@
 package gdconf
 
 import (
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/pkg/logger"
-	"github.com/gucooing/BaPs/protocol/proto"
+	sro "./common/server_only"
+	"./pkg/logger"
+	"./protocol/proto"
 )
 
 func (g *GameConfig) loadEliminateRaidSeasonManageExcelTable() {

@@ -1,10 +1,10 @@
 package enter
 
 import (
-	dbstruct "github.com/gucooing/BaPs/db/struct"
+	dbstruct "./db/struct"
 	"time"
 
-	"github.com/gucooing/BaPs/pkg/alg"
+	"./pkg/alg"
 )
 
 var es *EnterSet

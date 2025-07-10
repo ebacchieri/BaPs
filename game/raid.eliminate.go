@@ -1,16 +1,16 @@
 package game
 
 import (
-	"github.com/gucooing/BaPs/protocol/mx"
+	"./protocol/mx"
 	"time"
 
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/common/rank"
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/pkg/alg"
-	"github.com/gucooing/BaPs/pkg/logger"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"./common/enter"
+	"./common/rank"
+	sro "./common/server_only"
+	"./gdconf"
+	"./pkg/alg"
+	"./pkg/logger"
+	"./protocol/proto"
 )
 
 func GetEliminateRaidSeasonType() proto.RaidSeasonType {

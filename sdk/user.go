@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/gucooing/BaPs/config"
-	"github.com/gucooing/BaPs/db"
-	"github.com/gucooing/BaPs/pkg/alg"
-	"github.com/gucooing/BaPs/pkg/logger"
+	"./config"
+	"./db"
+	"./pkg/alg"
+	"./pkg/logger"
 )
 
 type YostarCreateloginRequest struct {

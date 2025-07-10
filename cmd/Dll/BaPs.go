@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/gucooing/BaPs"
+	"./"
 )
 
 func main() {

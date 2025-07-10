@@ -1,9 +1,9 @@
 package pack
 
 import (
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/protocol/mx"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"./common/enter"
+	"./protocol/mx"
+	"./protocol/proto"
 )
 
 func BillingPurchaseListByYostar(s *enter.Session, request, response mx.Message) {

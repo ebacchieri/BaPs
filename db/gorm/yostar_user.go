@@ -2,7 +2,7 @@ package db_gorm
 
 import (
 	"errors"
-	dbstruct "github.com/gucooing/BaPs/db/struct"
+	dbstruct "./db/struct"
 )
 
 func (x *DbGorm) GetYostarUserByUid(uid int64) *dbstruct.YostarUser {

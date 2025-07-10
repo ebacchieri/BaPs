@@ -2,8 +2,8 @@ package command
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/gucooing/BaPs/common/check"
-	"github.com/gucooing/BaPs/config"
+	"./common/check"
+	"./config"
 	"github.com/gucooing/cdq"
 	cdqlog "github.com/gucooing/cdq/logger"
 )

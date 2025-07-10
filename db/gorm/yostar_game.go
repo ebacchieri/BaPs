@@ -2,7 +2,7 @@ package db_gorm
 
 import (
 	"errors"
-	dbstruct "github.com/gucooing/BaPs/db/struct"
+	dbstruct "./db/struct"
 
 	"gorm.io/gorm/clause"
 )

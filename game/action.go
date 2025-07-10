@@ -1,8 +1,8 @@
 package game
 
 import (
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"./common/enter"
+	"./protocol/proto"
 )
 
 func GetActions(s *enter.Session) map[proto.ServerNotificationFlag]bool {

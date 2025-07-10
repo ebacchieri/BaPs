@@ -1,10 +1,10 @@
 package db
 
 import (
-	"github.com/gucooing/BaPs/config"
-	dbgorm "github.com/gucooing/BaPs/db/gorm"
-	dbstruct "github.com/gucooing/BaPs/db/struct"
-	"github.com/gucooing/BaPs/pkg/logger"
+	"./config"
+	dbgorm "./db/gorm"
+	dbstruct "./db/struct"
+	"./pkg/logger"
 	_ "github.com/ncruces/go-sqlite3/embed"
 	"log"
 )

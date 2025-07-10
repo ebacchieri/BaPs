@@ -3,8 +3,8 @@ package gdconf
 import (
 	"math/rand"
 
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/pkg/logger"
+	sro "./common/server_only"
+	"./pkg/logger"
 )
 
 func (g *GameConfig) loadCharacterExcelTable() {

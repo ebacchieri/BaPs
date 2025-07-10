@@ -2,8 +2,8 @@ package handbook
 
 import (
 	"fmt"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/pkg/logger"
+	"./gdconf"
+	"./pkg/logger"
 	"os"
 	"path/filepath"
 )

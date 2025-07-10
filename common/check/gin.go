@@ -1,8 +1,8 @@
 package check
 
 import (
-	"github.com/gucooing/BaPs/config"
-	"github.com/gucooing/BaPs/pkg/alg"
+	"./config"
+	"./pkg/alg"
 	"net"
 	"net/http"
 	"sync"
@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/gucooing/BaPs/pkg/logger"
+	"./pkg/logger"
 )
 
 var TPS int64

@@ -1,12 +1,12 @@
 package cmd
 
 import (
-	"github.com/gucooing/BaPs/protocol/mx"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"./protocol/mx"
+	"./protocol/proto"
 	"reflect"
 	"sync"
 
-	"github.com/gucooing/BaPs/pkg/logger"
+	"./pkg/logger"
 )
 
 var sharedCmdProtoMap *CmdProtoMap

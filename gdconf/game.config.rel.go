@@ -14,8 +14,8 @@ import (
     "sort"
     "strconv"
 	
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/pkg/logger"
+	sro "./common/server_only"
+	"./pkg/logger"
 	pb "google.golang.org/protobuf/proto"
 )
 

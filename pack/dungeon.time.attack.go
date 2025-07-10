@@ -1,14 +1,14 @@
 package pack
 
 import (
-	"github.com/gucooing/BaPs/protocol/mx"
+	"./protocol/mx"
 	"time"
 
-	"github.com/gucooing/BaPs/common/enter"
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/game"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"./common/enter"
+	sro "./common/server_only"
+	"./game"
+	"./gdconf"
+	"./protocol/proto"
 )
 
 func TimeAttackDungeonLogin(s *enter.Session, request, response mx.Message) {

@@ -1,11 +1,11 @@
 package game
 
 import (
-	"github.com/gucooing/BaPs/protocol/mx"
+	"./protocol/mx"
 	"strconv"
 
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"./common/enter"
+	"./protocol/proto"
 )
 
 func GetFriendBin(s *enter.Session) *enter.AccountFriend {

@@ -3,18 +3,18 @@ package sdk
 import (
 	"errors"
 	"fmt"
-	"github.com/gucooing/BaPs/common/mail"
-	dbstruct "github.com/gucooing/BaPs/db/struct"
-	"github.com/gucooing/BaPs/gdconf"
+	"./common/mail"
+	dbstruct "./db/struct"
+	"./gdconf"
 	"regexp"
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/gucooing/BaPs/common/code"
-	"github.com/gucooing/BaPs/config"
-	"github.com/gucooing/BaPs/db"
-	"github.com/gucooing/BaPs/pkg/alg"
-	"github.com/gucooing/BaPs/pkg/logger"
+	"./common/code"
+	"./config"
+	"./db"
+	"./pkg/alg"
+	"./pkg/logger"
 )
 
 var emailRe = regexp.MustCompile(`^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`)

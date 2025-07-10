@@ -2,13 +2,13 @@ package sdk
 
 import (
 	"encoding/json"
-	"github.com/gucooing/BaPs/gdconf"
+	"./gdconf"
 	"io"
 	"net/http"
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/gucooing/BaPs/config"
+	"./config"
 )
 
 func (s *SDK) GetServerInfo(c *gin.Context) *gdconf.ServerInfo {

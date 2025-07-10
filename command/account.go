@@ -3,9 +3,9 @@ package command
 import (
 	"fmt"
 	"github.com/bytedance/sonic"
-	"github.com/gucooing/BaPs/common/code"
-	"github.com/gucooing/BaPs/db"
-	"github.com/gucooing/BaPs/sdk"
+	"./common/code"
+	"./db"
+	"./sdk"
 	"github.com/gucooing/cdq"
 )
 

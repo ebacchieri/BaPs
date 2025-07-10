@@ -9,7 +9,7 @@ import (
 	"os"
 	"reflect"
 	"strconv"
-	"github.com/gucooing/protocol/mx"
+	"./protocol/mx"
 )
 
 type Config struct {

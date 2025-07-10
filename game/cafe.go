@@ -1,15 +1,15 @@
 package game
 
 import (
-	"github.com/gucooing/BaPs/protocol/mx"
+	"./protocol/mx"
 	"math/rand"
 	"time"
 
-	"github.com/gucooing/BaPs/common/enter"
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/pkg/alg"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"./common/enter"
+	sro "./common/server_only"
+	"./gdconf"
+	"./pkg/alg"
+	"./protocol/proto"
 )
 
 func DefaultCafeBin(s *enter.Session) *sro.CafeBin {

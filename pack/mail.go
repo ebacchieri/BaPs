@@ -1,13 +1,13 @@
 package pack
 
 import (
-	"github.com/gucooing/BaPs/protocol/mx"
+	"./protocol/mx"
 	"time"
 
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/game"
-	"github.com/gucooing/BaPs/pkg/logger"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"./common/enter"
+	"./game"
+	"./pkg/logger"
+	"./protocol/proto"
 )
 
 func MailCheck(s *enter.Session, request, response mx.Message) {

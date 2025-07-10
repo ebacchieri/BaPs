@@ -2,7 +2,7 @@ package proto
 
 import (
 	"github.com/bytedance/sonic"
-	"github.com/gucooing/BaPs/protocol/mx"
+	"./protocol/mx"
 )
 
 type GmTalkResponse struct {

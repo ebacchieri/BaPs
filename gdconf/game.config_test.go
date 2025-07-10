@@ -1,7 +1,7 @@
 package gdconf
 
 import (
-	"github.com/gucooing/BaPs/pkg/logger"
+	"./pkg/logger"
 	"os"
 	"strings"
 	"testing"
