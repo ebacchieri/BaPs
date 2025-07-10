@@ -639,7 +639,7 @@ class CompileToPython:
             if function_string:
                 file.write(String.NEWLINE * 2 + function_string)
 
-        file.close()
+            file.close()
 
     def create_module_file(self) -> None:
         """Create flatbuffer module file."""
