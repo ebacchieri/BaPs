@@ -6,7 +6,7 @@ import (
 	"github.com/ebacchieri/BaPs/protocol/mx"
 
 	"github.com/ebacchieri/BaPs/common/enter"
-	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/common/server_only"
 	"github.com/ebacchieri/BaPs/gdconf"
 	"github.com/ebacchieri/BaPs/pkg/alg"
 	"github.com/ebacchieri/BaPs/pkg/logger"

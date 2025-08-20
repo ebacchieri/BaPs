@@ -9,7 +9,7 @@ import (
 	"github.com/ebacchieri/BaPs/common/enter"
 	"github.com/ebacchieri/BaPs/common/rank"
 	ranar "github.com/ebacchieri/BaPs/common/rank_arena"
-	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/common/server_only"
 	"github.com/ebacchieri/BaPs/gdconf"
 	"github.com/ebacchieri/BaPs/pkg/alg"
 	"github.com/ebacchieri/BaPs/protocol/proto"

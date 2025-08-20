@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/ebacchieri/BaPs/common/enter"
-	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/common/server_only"
 	"github.com/ebacchieri/BaPs/game"
 	"github.com/ebacchieri/BaPs/gdconf"
 	"github.com/ebacchieri/BaPs/pkg/alg"

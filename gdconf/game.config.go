@@ -10,7 +10,7 @@ import (
 
 	"github.com/ebacchieri/BaPs/config"
 
-	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/common/server_only"
 	"github.com/ebacchieri/BaPs/pkg/logger"
 )
 

@@ -12,7 +12,7 @@ import (
 	dbstruct "github.com/ebacchieri/BaPs/db/struct"
 	"github.com/ebacchieri/BaPs/protocol/mx"
 
-	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/common/server_only"
 	"github.com/ebacchieri/BaPs/db"
 	"github.com/ebacchieri/BaPs/pkg/alg"
 	"github.com/ebacchieri/BaPs/pkg/logger"

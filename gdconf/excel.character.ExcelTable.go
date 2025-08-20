@@ -3,7 +3,7 @@ package gdconf
 import (
 	"math/rand"
 
-	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/common/server_only"
 	"github.com/ebacchieri/BaPs/pkg/logger"
 )
 

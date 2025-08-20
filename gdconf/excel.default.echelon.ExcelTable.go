@@ -1,7 +1,7 @@
 package gdconf
 
 import (
-	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/common/server_only"
 )
 
 func (g *GameConfig) loadDefaultEchelonExcelTable() {
