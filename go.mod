@@ -58,3 +58,4 @@ require (
 )
 
 replace github.com/gucooing/cdq => github.com/asfu222/cdq v1.0.6-safe
+replace github.com/ebacchieri/BaPs => github.com/ebacchieri/BaPs v0.0.1
