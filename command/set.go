@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ebacchieri/BaPs/config"
-	"github.com/ebacchieri/BaPs/protocol/mx"
+	"github.com/gucooing/BaPs/config"
+	"github.com/gucooing/BaPs/protocol/mx"
 
-	"github.com/ebacchieri/BaPs/common/enter"
-	"github.com/ebacchieri/BaPs/game"
-	"github.com/ebacchieri/cdq"
+	"github.com/gucooing/BaPs/common/enter"
+	"github.com/gucooing/BaPs/game"
+	"github.com/gucooing/cdq"
 )
 
 const (

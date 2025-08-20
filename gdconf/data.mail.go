@@ -6,7 +6,7 @@ import (
 	"os"
 	tt "text/template"
 
-	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/pkg/logger"
 )
 
 type MailInfo struct {

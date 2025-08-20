@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/ebacchieri/BaPs"
-	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs"
+	"github.com/gucooing/BaPs/pkg/logger"
 )
 
 func main() {

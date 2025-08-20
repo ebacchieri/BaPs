@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/ebacchieri/BaPs/protocol/proto"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func (c *CmdProtoMap) registerAllMessage() {

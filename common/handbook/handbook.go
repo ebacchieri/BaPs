@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ebacchieri/BaPs/gdconf"
-	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/gdconf"
+	"github.com/gucooing/BaPs/pkg/logger"
 )
 
 func NewHandbook() {

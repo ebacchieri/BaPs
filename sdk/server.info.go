@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ebacchieri/BaPs/gdconf"
+	"github.com/gucooing/BaPs/gdconf"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ebacchieri/BaPs/config"
+	"github.com/gucooing/BaPs/config"
 )
 
 func (s *SDK) GetServerInfo(c *gin.Context) *gdconf.ServerInfo {

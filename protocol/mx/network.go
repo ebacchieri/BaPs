@@ -12,7 +12,7 @@ import (
 	"github.com/go-resty/resty/v2"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ebacchieri/BaPs/pkg/alg"
+	"github.com/gucooing/BaPs/pkg/alg"
 )
 
 func GetFormMx(c *gin.Context) ([]byte, error) {

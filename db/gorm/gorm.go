@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"time"
 
-	dbstruct "github.com/ebacchieri/BaPs/db/struct"
+	dbstruct "github.com/gucooing/BaPs/db/struct"
 
 	_ "github.com/ncruces/go-sqlite3/embed"
 	"github.com/ncruces/go-sqlite3/gormlite"

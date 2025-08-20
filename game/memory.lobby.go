@@ -4,9 +4,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ebacchieri/BaPs/common/enter"
-	sro "github.com/ebacchieri/BaPs/common/server_only"
-	"github.com/ebacchieri/BaPs/protocol/proto"
+	"github.com/gucooing/BaPs/common/enter"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func NewMemoryLobbyBin() *sro.MemoryLobbyBin {

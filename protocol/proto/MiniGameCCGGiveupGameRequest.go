@@ -2,7 +2,7 @@ package proto
 
 import (
 	"github.com/bytedance/sonic"
-	"github.com/ebacchieri/BaPs/protocol/mx"
+	"github.com/gucooing/BaPs/protocol/mx"
 )
 
 type MiniGameCCGGiveupGameRequest struct {

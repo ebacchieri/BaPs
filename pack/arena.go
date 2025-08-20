@@ -3,12 +3,12 @@ package pack
 import (
 	"time"
 
-	"github.com/ebacchieri/BaPs/protocol/mx"
+	"github.com/gucooing/BaPs/protocol/mx"
 
-	"github.com/ebacchieri/BaPs/common/enter"
-	"github.com/ebacchieri/BaPs/common/rank"
-	"github.com/ebacchieri/BaPs/game"
-	"github.com/ebacchieri/BaPs/protocol/proto"
+	"github.com/gucooing/BaPs/common/enter"
+	"github.com/gucooing/BaPs/common/rank"
+	"github.com/gucooing/BaPs/game"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func ArenaLogin(s *enter.Session, request, response mx.Message) {

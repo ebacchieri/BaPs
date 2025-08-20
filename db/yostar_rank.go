@@ -11,7 +11,7 @@ import (
 	gromlogger "gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
 
-	"github.com/ebacchieri/BaPs/config"
+	"github.com/gucooing/BaPs/config"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )

@@ -4,8 +4,8 @@ import (
 	"errors"
 
 	"github.com/bytedance/sonic"
-	"github.com/ebacchieri/BaPs/db"
-	dbstruct "github.com/ebacchieri/BaPs/db/struct"
+	"github.com/gucooing/BaPs/db"
+	dbstruct "github.com/gucooing/BaPs/db/struct"
 )
 
 type AccountFriend struct {

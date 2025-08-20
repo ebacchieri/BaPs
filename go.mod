@@ -1,4 +1,4 @@
-module github.com/ebacchieri/BaPs
+module github.com/gucooing/BaPs
 
 go 1.23.2
 
@@ -9,7 +9,7 @@ require (
 	github.com/gin-gonic/contrib v0.0.0-20250521004450-2b1292699c15
 	github.com/gin-gonic/gin v1.10.1
 	github.com/go-resty/resty/v2 v2.16.5
-	github.com/ebacchieri/cdq v0.1.6
+	github.com/gucooing/cdq v0.1.6
 	github.com/ncruces/go-sqlite3 v0.26.0
 	github.com/ncruces/go-sqlite3/gormlite v0.24.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
@@ -56,4 +56,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/ebacchieri/cdq => github.com/asfu222/cdq v1.0.6-safe
+replace github.com/gucooing/cdq => github.com/asfu222/cdq v1.0.6-safe

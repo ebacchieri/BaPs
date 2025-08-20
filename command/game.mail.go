@@ -6,12 +6,12 @@ import (
 	"fmt"
 	"time"
 
-	dbstruct "github.com/ebacchieri/BaPs/db/struct"
+	dbstruct "github.com/gucooing/BaPs/db/struct"
 
-	"github.com/ebacchieri/BaPs/common/enter"
-	sro "github.com/ebacchieri/BaPs/common/server_only"
-	"github.com/ebacchieri/BaPs/game"
-	"github.com/ebacchieri/cdq"
+	"github.com/gucooing/BaPs/common/enter"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/game"
+	"github.com/gucooing/cdq"
 )
 
 const (

@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/pkg/logger"
 )
 
 type ProdIndex struct {

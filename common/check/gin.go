@@ -7,11 +7,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ebacchieri/BaPs/config"
-	"github.com/ebacchieri/BaPs/pkg/alg"
+	"github.com/gucooing/BaPs/config"
+	"github.com/gucooing/BaPs/pkg/alg"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/gucooing/BaPs/pkg/logger"
 )
 
 var TPS int64

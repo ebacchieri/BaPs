@@ -6,9 +6,9 @@ import (
 	"sync/atomic"
 
 	"github.com/bytedance/sonic"
-	"github.com/ebacchieri/BaPs/common/check"
-	"github.com/ebacchieri/BaPs/pkg"
-	"github.com/ebacchieri/cdq"
+	"github.com/gucooing/BaPs/common/check"
+	"github.com/gucooing/BaPs/pkg"
+	"github.com/gucooing/cdq"
 	"github.com/shirou/gopsutil/cpu"
 	"github.com/shirou/gopsutil/mem"
 )

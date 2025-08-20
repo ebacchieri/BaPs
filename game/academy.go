@@ -3,13 +3,13 @@ package game
 import (
 	"time"
 
-	"github.com/ebacchieri/BaPs/protocol/mx"
+	"github.com/gucooing/BaPs/protocol/mx"
 
-	"github.com/ebacchieri/BaPs/common/enter"
-	sro "github.com/ebacchieri/BaPs/common/server_only"
-	"github.com/ebacchieri/BaPs/gdconf"
-	"github.com/ebacchieri/BaPs/pkg/alg"
-	"github.com/ebacchieri/BaPs/protocol/proto"
+	"github.com/gucooing/BaPs/common/enter"
+	sro "github.com/gucooing/BaPs/common/server_only"
+	"github.com/gucooing/BaPs/gdconf"
+	"github.com/gucooing/BaPs/pkg/alg"
+	"github.com/gucooing/BaPs/protocol/proto"
 )
 
 func GetAcademyBin(s *enter.Session) *sro.AcademyBin {
