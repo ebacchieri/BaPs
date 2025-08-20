@@ -1,0 +1,169 @@
+name: Build
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest]
+        target:
+          - darwin-amd64
+          - darwin-arm64
+          - windows-amd64
+          - windows-arm64
+          # - android-amd64
+          # - android-arm64
+          - linux-amd64
+          - linux-arm64
+          - linux-loong64
+          - linux-mips64
+          - linux-mips64le
+          - linux-ppc64
+          - linux-ppc64le
+          - linux-riscv64
+          - linux-s390x
+          - aix-ppc64
+          - dragonfly-amd64
+          - netbsd-amd64
+          - netbsd-arm64
+    name: Build
+    runs-on: ${{ matrix.platform }}
+    env:
+      TARGET: ${{ matrix.target }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: "1.23.2"
+        check-latest: true
+
+    - name: Build Proto
+      run: |
+          cd ./common/server_only
+          chmod 777 ./protoc ./protoc-gen-go
+          ./protoc --proto_path=. --plugin=protoc-gen-go=./protoc-gen-go --go_out=. *.proto
+
+    - name: Build
+      run: |
+        TARGET_SPLIT=(${TARGET//-/ })
+        GOOS=${TARGET_SPLIT[0]}
+        GOARCH=${TARGET_SPLIT[1]}
+        
+        OUTPUT_NAME="BaPs_"$GOOS"_"$GOARCH
+        if [ "$GOOS" = "windows" ]; then
+          OUTPUT_NAME="$OUTPUT_NAME.exe"
+        fi
+        
+        echo "Building for $GOOS-$GOARCH..."
+        GOOS=$GOOS GOARCH=$GOARCH \
+        go build -ldflags="-s -w" -o ./bin/$OUTPUT_NAME ./cmd/BaPs/BaPs.go
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: BaPs_${{ matrix.target }}
+        path: bin/*
+
+  build-data:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: "1.23.2"
+        check-latest: true
+    - name: Build Proto
+      run: |
+          cd ./common/server_only
+          chmod 777 ./protoc ./protoc-gen-go
+          ./protoc --proto_path=. --plugin=protoc-gen-go=./protoc-gen-go --go_out=. *.proto
+
+    - name: Build data
+      run: go run -tags=generate_excel generate_excel.go
+
+    - name: Upload data artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: data
+        path: data/*
+
+  build-resources:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: "1.23.2"
+        check-latest: true
+        
+    - name: Fetch Resources
+      run: chmod +x ./fetch_resources.sh && ./fetch_resources.sh
+
+    - name: Upload resources artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: resources
+        path: resources/*
+
+  docker:
+    needs: [build, build-data, build-resources]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download app artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: BaPs_linux-*
+          path: ./bin
+          merge-multiple: true
+
+      - name: Download data artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: data
+          path: ./data
+
+      - name: Download resources artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: resources
+          path: ./resources
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.23.2"
+          check-latest: true
+
+      - uses: benjlevesque/short-sha@v3.0
+        id: short-sha
+
+      - name: GitHub Docker login
+        run: echo ${{ secrets.TOKEN }} | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile
+          secrets: |
+            sha=${{ env.SHA }}
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: ghcr.io/${{ github.repository_owner }}/baps:latest,ghcr.io/${{ github.repository_owner }}/baps:${{ github.sha }}
