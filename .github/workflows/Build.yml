@@ -94,4 +94,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: data
-        path: data/*
+        path: |
+          data/*
+          resources/*
+          TEMP/*
