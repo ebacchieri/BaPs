@@ -4,7 +4,7 @@ import (
 	"math/rand"
 
 	"github.com/ebacchieri/BaPs/common/enter"
-	"github.com/ebacchieri/BaPs/common/server_only"
+	sro "github.com/ebacchieri/BaPs/common/server_only"
 	"github.com/ebacchieri/BaPs/gdconf"
 	"github.com/ebacchieri/BaPs/pkg/logger"
 	"github.com/ebacchieri/BaPs/protocol/proto"

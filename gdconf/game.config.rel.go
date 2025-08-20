@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ebacchieri/BaPs/common/server_only"
+	sro "github.com/ebacchieri/BaPs/common/server_only"
 	"github.com/ebacchieri/BaPs/pkg/logger"
 	pb "google.golang.org/protobuf/proto"
 )

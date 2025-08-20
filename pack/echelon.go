@@ -2,7 +2,7 @@ package pack
 
 import (
 	"github.com/ebacchieri/BaPs/common/enter"
-	"github.com/ebacchieri/BaPs/common/server_only"
+	sro "github.com/ebacchieri/BaPs/common/server_only"
 	"github.com/ebacchieri/BaPs/game"
 	"github.com/ebacchieri/BaPs/protocol/mx"
 	"github.com/ebacchieri/BaPs/protocol/proto"
