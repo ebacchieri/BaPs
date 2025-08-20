@@ -69,6 +69,7 @@ jobs:
         path: bin/*
 
   build-data:
+    needs: build-resources
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
