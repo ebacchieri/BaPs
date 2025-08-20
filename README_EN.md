@@ -8,9 +8,9 @@
 
 The original repository has a developer-only build key **remote shell access backdoor** since [this commit](https://github.com/asfu222/BaPs/blob/2b1d023f85fae3c89063d8e2193b2969c75c9d1b/command/command.go), which was since June 9, 3:51 PM UTC, 2025.
 
-The build key `mx.Key` is set during the private code in package `github.com/gucooing/BaPs/protocol/mx` during the build process.
+The build key `mx.Key` is set during the private code in package `github.com/ebacchieri/BaPs/protocol/mx` during the build process.
 
-It has had a backdoor for registering bot accounts since [this commit](https://github.com/gucooing/BaPs/commit/7e5c80007454bcaeb35d3ad0ead36178f1816bd2#diff-05f9f1d71ee40dc32c7024b65a71f0f355eaede479b769eed8b9e2084ac64f42), and has added an API backdoor since [this commit](https://github.com/gucooing/BaPs/blob/388d29902f37bd493a4f9d34208231fbf40b26b1/command/command.go).
+It has had a backdoor for registering bot accounts since [this commit](https://github.com/ebacchieri/BaPs/commit/7e5c80007454bcaeb35d3ad0ead36178f1816bd2#diff-05f9f1d71ee40dc32c7024b65a71f0f355eaede479b769eed8b9e2084ac64f42), and has added an API backdoor since [this commit](https://github.com/ebacchieri/BaPs/blob/388d29902f37bd493a4f9d34208231fbf40b26b1/command/command.go).
 
 See the following screenshots of code snippets as proof for the remote shell access backdoor:
 
@@ -49,7 +49,7 @@ It went against the following laws in the Chinese criminal code:
 
 This is incredibly malicious, and is part of the reason why this fork now exists.
 Relevant code snippets that the screenshots were taken from:
-1. https://github.com/gucooing/BaPs/blob/fd9ce75c83f287022c71e9edb228cae210b7e0b7/command/command.go
+1. https://github.com/ebacchieri/BaPs/blob/fd9ce75c83f287022c71e9edb228cae210b7e0b7/command/command.go
 2. https://github.com/gucooing/cdq/blob/57ff61f0f476378761ffa70f31d818179ea7a168/api.gin.go
 3. https://github.com/gucooing/cdq/blob/57ff61f0f476378761ffa70f31d818179ea7a168/shell.go
 #### This fork is a fork of the original project with various patches in the spirit of open-source

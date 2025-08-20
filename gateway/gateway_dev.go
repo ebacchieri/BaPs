@@ -5,10 +5,10 @@ package gateway
 
 import (
 	"github.com/bytedance/sonic"
-	"github.com/gucooing/BaPs/config"
-	"github.com/gucooing/BaPs/pkg/logger"
-	"github.com/gucooing/BaPs/protocol/cmd"
-	"github.com/gucooing/BaPs/protocol/mx"
+	"github.com/ebacchieri/BaPs/config"
+	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/protocol/cmd"
+	"github.com/ebacchieri/BaPs/protocol/mx"
 )
 
 func logPlayerMsg(logType int, msg mx.Message) {

@@ -1,4 +1,4 @@
-module github.com/gucooing/BaPs
+module github.com/ebacchieri/BaPs
 
 go 1.23.2
 

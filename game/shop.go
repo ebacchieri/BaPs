@@ -1,9 +1,9 @@
 package game
 
 import (
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"github.com/ebacchieri/BaPs/common/enter"
+	"github.com/ebacchieri/BaPs/gdconf"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 )
 
 func GetNoRefreshShopProductList(s *enter.Session, categoryType proto.ShopCategoryType) []*proto.ShopProductDB {

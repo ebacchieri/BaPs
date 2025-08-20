@@ -1,10 +1,10 @@
 package game
 
 import (
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/pkg/logger"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"github.com/ebacchieri/BaPs/common/enter"
+	"github.com/ebacchieri/BaPs/gdconf"
+	"github.com/ebacchieri/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 )
 
 var MinElapsedRealtime float32 = 10 // 最低战斗时间

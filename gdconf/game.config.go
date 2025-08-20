@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gucooing/BaPs/config"
+	"github.com/ebacchieri/BaPs/config"
 
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/pkg/logger"
+	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/pkg/logger"
 )
 
 var GC *GameConfig

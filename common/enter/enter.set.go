@@ -3,9 +3,9 @@ package enter
 import (
 	"time"
 
-	dbstruct "github.com/gucooing/BaPs/db/struct"
+	dbstruct "github.com/ebacchieri/BaPs/db/struct"
 
-	"github.com/gucooing/BaPs/pkg/alg"
+	"github.com/ebacchieri/BaPs/pkg/alg"
 )
 
 var es *EnterSet

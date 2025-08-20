@@ -4,7 +4,7 @@ package proto
 
 import (
 	"github.com/bytedance/sonic"
-	"github.com/gucooing/BaPs/protocol/mx"
+	"github.com/ebacchieri/BaPs/protocol/mx"
 )
 
 type ScenarioLobbyStudentChangeRequest struct {

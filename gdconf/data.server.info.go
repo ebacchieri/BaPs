@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gucooing/BaPs/config"
-	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/config"
+	"github.com/ebacchieri/BaPs/pkg/logger"
 )
 
 type ServerInfo struct {
