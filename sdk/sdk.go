@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/gucooing/BaPs/config"
+	"github.com/ebacchieri/BaPs/config"
 )
 
 type SDK struct {
@@ -51,6 +51,6 @@ func (s *SDK) initRouter() {
 func handleIndex(c *gin.Context) {
 	c.HTML(http.StatusOK, "index.tmpl", gin.H{
 		"title":  "Ba Ps!",
-		"github": "https://github.com/gucooing/BaPs",
+		"github": "https://github.com/ebacchieri/BaPs",
 	})
 }

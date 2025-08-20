@@ -3,10 +3,10 @@ package rank
 import (
 	"time"
 
-	ranar "github.com/gucooing/BaPs/common/rank_arena"
-	"github.com/gucooing/BaPs/db"
-	"github.com/gucooing/BaPs/gdconf"
-	"github.com/gucooing/BaPs/pkg/logger"
+	ranar "github.com/ebacchieri/BaPs/common/rank_arena"
+	"github.com/ebacchieri/BaPs/db"
+	"github.com/ebacchieri/BaPs/gdconf"
+	"github.com/ebacchieri/BaPs/pkg/logger"
 )
 
 /*

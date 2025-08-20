@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/gucooing/BaPs/common/mail"
-	"github.com/gucooing/cdq"
+	"github.com/ebacchieri/BaPs/common/mail"
+	"github.com/ebacchieri/cdq"
 )
 
 const (

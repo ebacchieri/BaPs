@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/gucooing/BaPs/pkg/alg"
+	"github.com/ebacchieri/BaPs/pkg/alg"
 )
 
 func (c *Config) check() {

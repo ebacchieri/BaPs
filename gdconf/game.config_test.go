@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/pkg/logger"
 )
 
 var dataPath = "./data"

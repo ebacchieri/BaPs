@@ -1,8 +1,8 @@
 package pack
 
 import (
-	"github.com/gucooing/BaPs/common/enter"
-	"github.com/gucooing/BaPs/protocol/mx"
+	"github.com/ebacchieri/BaPs/common/enter"
+	"github.com/ebacchieri/BaPs/protocol/mx"
 )
 
 func BattlePassGetInfo(s *enter.Session, request, response mx.Message) {

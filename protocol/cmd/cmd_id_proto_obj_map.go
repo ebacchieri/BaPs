@@ -4,10 +4,10 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/gucooing/BaPs/protocol/mx"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"github.com/ebacchieri/BaPs/protocol/mx"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 
-	"github.com/gucooing/BaPs/pkg/logger"
+	"github.com/ebacchieri/BaPs/pkg/logger"
 )
 
 var sharedCmdProtoMap *CmdProtoMap

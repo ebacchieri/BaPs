@@ -3,10 +3,10 @@ package game
 import (
 	"time"
 
-	"github.com/gucooing/BaPs/common/enter"
-	sro "github.com/gucooing/BaPs/common/server_only"
-	"github.com/gucooing/BaPs/protocol/mx"
-	"github.com/gucooing/BaPs/protocol/proto"
+	"github.com/ebacchieri/BaPs/common/enter"
+	sro "github.com/ebacchieri/BaPs/common/server_only"
+	"github.com/ebacchieri/BaPs/protocol/mx"
+	"github.com/ebacchieri/BaPs/protocol/proto"
 )
 
 func NewEventContentBin() *sro.EventContentBin {

@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"github.com/bytedance/sonic"
-	"github.com/gucooing/BaPs/common/code"
-	"github.com/gucooing/BaPs/db"
-	"github.com/gucooing/BaPs/sdk"
-	"github.com/gucooing/cdq"
+	"github.com/ebacchieri/BaPs/common/code"
+	"github.com/ebacchieri/BaPs/db"
+	"github.com/ebacchieri/BaPs/sdk"
+	"github.com/ebacchieri/cdq"
 )
 
 var (
