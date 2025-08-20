@@ -1,5 +1,3 @@
-module github.com/ebacchieri/BaPs
-module github.com/ebacchieri/BaPs/common
 module github.com/ebacchieri/BaPs/common/server_only
 
 go 1.23.2
