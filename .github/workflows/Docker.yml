@@ -108,6 +108,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Sync BaPs
+        uses: actions/checkout@v4
+        with:
+          repository: ebacchieri/BaPs
+          ref: "main"
+          fetch-depth: '1'
+          token: ${{ secrets.TOKEN }}
+          path: './app/src'
+
       - name: Download app artifacts
         uses: actions/download-artifact@v4
         with:
