@@ -40,7 +40,8 @@ jobs:
       with:
         go-version: "1.23.2"
         check-latest: true
-
+    - name: Tidy Go Modules
+      run: go mod tidy
     - name: Build Proto
       run: |
           cd ./common/server_only
