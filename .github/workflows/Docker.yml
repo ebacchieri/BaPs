@@ -68,8 +68,7 @@ jobs:
         name: BaPs_${{ matrix.target }}
         path: bin/*
 
-  build-data:
-    needs: build-resources
+  build-data:    
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -85,37 +84,25 @@ jobs:
           chmod 777 ./protoc ./protoc-gen-go
           ./protoc --proto_path=. --plugin=protoc-gen-go=./protoc-gen-go --go_out=. *.proto
 
+    - name: Fetch Resources
+      run: chmod +x ./fetch_resources.sh && ./fetch_resources.sh
+
     - name: Build data
       run: go run -tags=generate_excel generate_excel.go
 
-    - name: Upload data artifacts
+    - name: Upload data
       uses: actions/upload-artifact@v4
       with:
         name: data
         path: data/*
-
-  build-resources:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-    - name: Set up Go
-      uses: actions/setup-go@v5
-      with:
-        go-version: "1.23.2"
-        check-latest: true
-        
-    - name: Fetch Resources
-      run: chmod +x ./fetch_resources.sh && ./fetch_resources.sh
-
-    - name: Upload resources artifacts
+    - name: Upload data 2
       uses: actions/upload-artifact@v4
       with:
         name: resources
         path: resources/*
 
   docker:
-    needs: [build, build-data, build-resources]
+    needs: [build, build-data]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
